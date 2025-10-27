@@ -1,5 +1,8 @@
 import 'dart:async';
 
+import 'package:firebase_core/firebase_core.dart';
+
+import '../../firebase_options.dart';
 import '../../global_imports.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -44,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen>
         _fadeController.forward();
         await _initializeApp();
 
-        await Future.delayed(const Duration(milliseconds: 1200));
+        await Future.delayed(const Duration(milliseconds: 1500));
 
         if (!mounted) return;
         context.go(AppRoutes.home);
@@ -65,7 +68,9 @@ class _SplashScreenState extends State<SplashScreen>
       await EnvConstant.init();
 
       await HiveServices().init();
-
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      );
       initGetIt();
       await getIt<AppServices>().initAppServices();
 

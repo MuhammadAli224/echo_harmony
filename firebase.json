@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"echo-harmony","appId":"1:371482632296:android:2cc5fbe45264f5fc979bdd","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"echo-harmony","configurations":{"android":"1:371482632296:android:2cc5fbe45264f5fc979bdd","ios":"1:371482632296:ios:b05882745e22dca7979bdd"}}}}}}

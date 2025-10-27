@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "371482632296",
+    "project_id": "echo-harmony",
+    "storage_bucket": "echo-harmony.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371482632296:android:2cc5fbe45264f5fc979bdd",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdaUFfNrkOQ9-xcx527OGPlE-0cF2ywbY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

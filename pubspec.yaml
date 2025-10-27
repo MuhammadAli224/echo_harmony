@@ -61,6 +61,9 @@ dependencies:
 
   # Notification
   onesignal_flutter: ^5.3.4
+  firebase_core: ^4.2.0
+  firebase_messaging: ^16.0.3
+
 
 
 dev_dependencies:
