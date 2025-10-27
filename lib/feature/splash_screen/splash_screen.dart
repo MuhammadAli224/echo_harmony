@@ -11,7 +11,7 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen>
     with TickerProviderStateMixin {
-  final String appName = "Ibn Rushd Academy";
+  final String appName = "Echo Harmony";
   int currentIndex = 0;
   Timer? _timer;
 
@@ -43,14 +43,11 @@ class _SplashScreenState extends State<SplashScreen>
         _timer?.cancel();
         _fadeController.forward();
         await _initializeApp();
-        // Future.delayed(const Duration(seconds: 2), () async {
-        final token = await getIt<AuthLocalDataSource>().getToken();
-        if (token != null) {
-          context.go(AppRoutes.home);
-        } else {
-          // context.go(AppRoutes.mainScreen);
-        }
-        // });
+
+        await Future.delayed(const Duration(milliseconds: 1200));
+
+        if (!mounted) return;
+        context.go(AppRoutes.home);
       }
     });
   }
@@ -81,7 +78,7 @@ class _SplashScreenState extends State<SplashScreen>
 
   @override
   Widget build(BuildContext context) {
-    String firstWord = 'Ibn Rushd';
+    String firstWord = 'Echo';
     String visibleText = appName.substring(0, currentIndex);
     String firstVisible = '';
     String secondVisible = '';
@@ -149,7 +146,7 @@ class _SplashScreenState extends State<SplashScreen>
             FadeTransition(
               opacity: _fadeAnimation,
               child: const Text(
-                "المركز الافضل في قطر لخدمتك",
+                "Social Committee Elections",
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.grey,

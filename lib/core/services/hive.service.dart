@@ -1,4 +1,3 @@
-
 import '../../global_imports.dart';
 
 class HiveServices {
@@ -7,15 +6,10 @@ class HiveServices {
 
     _registerAdapters();
 
-    await Future.wait([
-      _initAppBox(),
-      _initializeBoxModel<AuthUserModel>(boxName: BoxKey.authUserBox),
-    ]);
+    await Future.wait([_initAppBox()]);
   }
 
-  void _registerAdapters() {
-    _register<AuthUserModel>(AuthUserModelAdapter(), 100);
-  }
+  void _registerAdapters() {}
 
   Future<void> _initAppBox() async {
     await Hive.openBox(BoxKey.appBox);

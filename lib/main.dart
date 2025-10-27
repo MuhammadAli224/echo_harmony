@@ -40,10 +40,9 @@ Future<void> main() async {
       supportedLocales: const [
         Locale('en'),
         Locale('ar'),
-        Locale('bn'),
-        Locale('ur'),
+
       ],
-      startLocale: const Locale('ar', "SA"),
+      startLocale: const Locale('ar', "Jo"),
       fallbackLocale: const Locale('en'),
       saveLocale: true,
       path: '/',
