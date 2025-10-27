@@ -11,11 +11,7 @@ class HomeTabIcon extends StatelessWidget {
     return SizedBox(
       height: 55,
       width: 40,
-      child: Center(
-          child: Icon(
-            icon,
-            color: iconColor,
-          )),
+      child: Center(child: Icon(icon, color: iconColor)),
     );
   }
 }

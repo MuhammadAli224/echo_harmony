@@ -96,5 +96,6 @@ flutter:
     - assets/fonts/Almarai/
     - assets/images/
     - assets/lottie/
+    - assets/html/
     - .env
 

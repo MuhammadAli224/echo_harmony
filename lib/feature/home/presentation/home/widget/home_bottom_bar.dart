@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_floating_bottom_bar/flutter_floating_bottom_bar.dart';
 
 import '../../../../../core/core.dart';
+import '../../../../../generated/assets.dart';
 import '../pages/our_program.dart';
 import 'home_tab_icon.dart';
 
@@ -47,6 +48,8 @@ class _HomeBottomBarState extends State<HomeBottomBar>
   @override
   Widget build(BuildContext context) {
     return BottomBar(
+      barColor: Colors.grey.shade300,
+      scrollOpposite: true,
       borderRadius: BorderRadius.circular(500),
       duration: const Duration(seconds: 1),
       curve: Curves.decelerate,
@@ -55,13 +58,21 @@ class _HomeBottomBarState extends State<HomeBottomBar>
           (BuildContext context, ScrollController controller) => TabBarView(
             controller: tabController,
             dragStartBehavior: DragStartBehavior.down,
-            physics: const BouncingScrollPhysics(),
-            children: [
-              Container(),
-              Container(),
-              Container(),
-              Container(),
-              const OurProgramPage(),
+            // physics: const BouncingScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
+
+            children: const [
+              OurProgramPage(htmlContent: Assets.htmlHome, title: "Home"),
+              OurProgramPage(htmlContent: Assets.htmlAbout, title: "About"),
+              OurProgramPage(
+                htmlContent: Assets.htmlOurTeam,
+                title: "Our Team",
+              ),
+              OurProgramPage(htmlContent: Assets.htmlWhyUs, title: "Why Us?"),
+              OurProgramPage(
+                htmlContent: Assets.htmlOurProgram,
+                title: "Feedback",
+              ),
             ],
           ),
       child: TabBar(
@@ -69,30 +80,35 @@ class _HomeBottomBarState extends State<HomeBottomBar>
         dividerHeight: 0,
         indicatorPadding: const EdgeInsets.fromLTRB(6, 0, 6, 0),
         controller: tabController,
-        indicator: const UnderlineTabIndicator(
-          borderSide: BorderSide(width: 4, color: AppColor.primaryColor600),
-          insets: EdgeInsets.fromLTRB(16, 0, 16, 8),
+        indicator: UnderlineTabIndicator(
+          borderSide: const BorderSide(
+            width: 4,
+            color: AppColor.primaryColor600,
+          ),
+          insets: const EdgeInsets.fromLTRB(16, 0, 16, 8),
+          borderRadius: BorderRadius.circular(5),
         ),
         tabs: [
           HomeTabIcon(
             icon: Icons.home,
-            iconColor: currentPage == 0 ? AppColor.primaryColor : null,
+            iconColor: currentPage == 0 ? Colors.blue : null,
           ),
           HomeTabIcon(
             icon: Icons.info,
-            iconColor: currentPage == 1 ? AppColor.primaryColor : null,
+            iconColor: currentPage == 1 ? Colors.blue : null,
           ),
           HomeTabIcon(
             icon: Icons.person,
-            iconColor: currentPage == 2 ? AppColor.primaryColor : null,
+            iconColor: currentPage == 2 ? Colors.blue : null,
           ),
           HomeTabIcon(
             icon: Icons.question_mark_rounded,
-            iconColor: currentPage == 3 ? AppColor.primaryColor : null,
+            iconColor: currentPage == 3 ? Colors.blue : null,
           ),
           HomeTabIcon(
             icon: Icons.library_books,
-            iconColor: currentPage == 4 ? AppColor.primaryColor : null,
+
+            iconColor: currentPage == 4 ? Colors.blue : null,
           ),
         ],
       ),

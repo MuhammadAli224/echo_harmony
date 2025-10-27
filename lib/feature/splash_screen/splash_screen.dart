@@ -121,11 +121,12 @@ class _SplashScreenState extends State<SplashScreen>
                   TextSpan(
                     text: firstVisible,
                     style: const TextStyle(
-                      color: Color(0xFF002754),
+                      // color: Color(0xFF002754),
+                      color: Color(0xFF000000),
                       shadows: [
                         Shadow(
                           blurRadius: 5,
-                          color: Color(0xFF02438E),
+                          color: Color(0xFF000080),
                           offset: Offset(0, 0),
                         ),
                       ],
@@ -134,11 +135,12 @@ class _SplashScreenState extends State<SplashScreen>
                   TextSpan(
                     text: secondVisible,
                     style: const TextStyle(
-                      color: Color(0xFF00A665),
+                      fontWeight: FontWeight.w100,
+                      color: Color(0xFF000000),
                       shadows: [
                         Shadow(
                           blurRadius: 5,
-                          color: Color(0xFF04B670),
+                          color: Color(0xFF000000),
                           offset: Offset(0, 0),
                         ),
                       ],

@@ -2,18 +2,21 @@
 class Assets {
   Assets._();
 
-  static const String almaraiAlmaraiBold =
-      'assets/fonts/Almarai/Almarai-Bold.ttf';
-  static const String almaraiAlmaraiExtraBold =
-      'assets/fonts/Almarai/Almarai-ExtraBold.ttf';
-  static const String almaraiAlmaraiLight =
-      'assets/fonts/Almarai/Almarai-Light.ttf';
-  static const String almaraiAlmaraiRegular =
-      'assets/fonts/Almarai/Almarai-Regular.ttf';
+  static const String almaraiAlmaraiBold = 'assets/fonts/Almarai/Almarai-Bold.ttf';
+  static const String almaraiAlmaraiExtraBold = 'assets/fonts/Almarai/Almarai-ExtraBold.ttf';
+  static const String almaraiAlmaraiLight = 'assets/fonts/Almarai/Almarai-Light.ttf';
+  static const String almaraiAlmaraiRegular = 'assets/fonts/Almarai/Almarai-Regular.ttf';
+  static const String echoHarmony = '.env';
+  static const String htmlAbout = 'assets/html/about.html';
+  static const String htmlHome = 'assets/html/home.html';
+  static const String htmlOurProgram = 'assets/html/our_program.html';
+  static const String htmlOurTeam = 'assets/html/our_team.html';
+  static const String htmlWhyUs = 'assets/html/why_us.html';
   static const String imagesAppNewIcon = 'assets/images/app_new_icon.png';
   static const String lottieError = 'assets/lottie/error.json';
   static const String lottieNfc = 'assets/lottie/nfc.json';
   static const String lottieNoData = 'assets/lottie/no_data.json';
   static const String lottieNoOrder = 'assets/lottie/no_order.json';
   static const String lottieSuccess = 'assets/lottie/success.json';
+
 }
