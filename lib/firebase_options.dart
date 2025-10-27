@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyCdaUFfNrkOQ9-xcx527OGPlE-0cF2ywbY',
-    appId: '1:371482632296:android:2cc5fbe45264f5fc979bdd',
+    appId: '1:371482632296:android:289755bb30d6cbbd979bdd',
     messagingSenderId: '371482632296',
     projectId: 'echo-harmony',
     storageBucket: 'echo-harmony.firebasestorage.app',
@@ -59,10 +59,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyCmcxklE7BfsYQoCBgnXvsFm-ZaIYsnGVE',
-    appId: '1:371482632296:ios:b05882745e22dca7979bdd',
+    appId: '1:371482632296:ios:3fb70574cbeeec26979bdd',
     messagingSenderId: '371482632296',
     projectId: 'echo-harmony',
     storageBucket: 'echo-harmony.firebasestorage.app',
-    iosBundleId: 'com.example.flutterApp',
+    iosBundleId: 'com.echo.harmony',
   );
+
 }

@@ -1,4 +1,4 @@
-package com.example.flutter_app
+package com.echo.harmony
 
 import io.flutter.embedding.android.FlutterActivity
 
